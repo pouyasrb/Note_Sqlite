@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:id="@+id/cardviewnote"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:textColor="@color/purple_200"
+            android:id="@+id/foldertitletextview"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+
+            android:textSize="20sp"
+            android:text="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/folderbtnupdate"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/blue" />
+
+        <ImageView
+            android:id="@+id/foldrtbtndelet"
+            android:layout_below="@id/folderbtnupdate"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/red" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

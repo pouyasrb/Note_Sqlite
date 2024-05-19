@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/foldernote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="FOlDERNOTES"
+        android:textColor="@color/pink"
+        android:textSize="25sp" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/btn_choosView"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/view"
+        android:text="Choose View" />
+
+
+    <ImageButton
+        android:id="@+id/btn_sort"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/down"
+        android:text="Sort" />
+
+    <ImageButton
+        android:id="@+id/sortview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@id/btn_sort"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/swap"
+        android:text="Sort" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foldernotesRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foldernote"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+         />
+
+
+</RelativeLayout>

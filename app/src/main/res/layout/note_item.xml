@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewnote"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="30dp"
+
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:id="@+id/titletextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="text"
+            android:textColor="@color/purple_200"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/datetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.5"
+
+
+         android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="text"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/conenttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titletextview"
+            android:layout_marginStart="30dp"
+            android:text="text"
+            android:textColor="@color/purple_700"
+            android:textSize="15sp" />
+
+        <ImageView
+
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/edit"
+            app:tint="@color/blue" />
+
+        <ImageView
+            android:id="@+id/btndelet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnupdate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/delet"
+            app:tint="@color/red" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

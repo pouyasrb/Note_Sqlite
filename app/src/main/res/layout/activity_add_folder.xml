@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:fontFamily="serif"
+            android:id="@+id/addFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Add Folder"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+
+            />
+
+        <ImageView
+            android:id="@+id/foldersaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/done" />
+
+        <EditText
+            android:id="@+id/foldertitletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addFolder"
+            android:layout_margin="12dp"
+            android:hint="Enter title" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
