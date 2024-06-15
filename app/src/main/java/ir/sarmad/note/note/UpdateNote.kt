@@ -37,7 +37,7 @@ class UpdateNote : AppCompatActivity(),DbListener {
             val newtitle = binding.updatetitletext.text.toString()
             val newconetnt = binding.updatecontentedittext.text.toString()
             val alertDialog = AlertDialog.Builder(this)
-                .setMessage("Are you sure you want to delete?")
+                .setMessage("Are you sure you want to delete?.")
                 .setPositiveButton("Yes") { _, _ ->
                     val currentDateTime = LocalDateTime.now()
                     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
